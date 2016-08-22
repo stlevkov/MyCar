@@ -2,12 +2,6 @@
 
 class UsersController extends BaseController
 {
-    function index()
-    {
-        $this->users = $this->model->getAll();
-    }
-
-
     public function login()
     {
         if ($this->isPost) {
@@ -59,41 +53,9 @@ class UsersController extends BaseController
             }
         }
     }
-
-
     public function logout()
     {
         session_destroy();
         $this->redirect("");
     }
-
-    function edit(int $id)
-    {
-        function edit(int $id)
-        {
-            if ($this->isPost) {
-                // HTTP POST
-
-                $title = $_POST['username'];
-                if (strlen($title) < 1) {
-                    $this->setValidationError("username", "Задължително поле!");
-                }
-
-                $content = $_POST['password_hash'];
-                if (strlen($content) < 1) {
-                    $this->setValidationError("password_hash", "Задължително поле");
-                }
-
-                if ($this->formValid()) {
-                    if ($this->model->edit($title, $content)) {
-                        $this->addInfoMessage("Потребителят е редактиран.");
-                    } else {
-                        $this->addErrorMessage("Грешка! Не може да се редактира.");
-                    }
-                    $this->redirect('users');
-                }
-            }
-        }
-    }
-
 }

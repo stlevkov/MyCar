@@ -18,6 +18,10 @@ body>footer {
     text-align: center;
 }
 
+body {
+    background: gray;
+}
+
 table th, table td {
     background: #DDD;
     padding: 5px;
@@ -33,7 +37,11 @@ ul#messages li {
 }
 
 ul#messages li.info {
-    background: #7f7;
+
+    background: #B8860B;
+    color: white;
+    font-family: sans-serif;
+    text-size: 5px;
 }
 
 ul#messages li.error {
@@ -56,6 +64,7 @@ ul#messages li.error {
 #logged-in-info form {
     display: inline-block;
     margin-right: 10px;
+    color: #FFF;
 }
 
 body>aside {
@@ -82,8 +91,47 @@ body>main:after {
     clear: both;
 }
 
-#site-logo {
-    background: black;
-    width: 100%;
+#site-nav {
+    height: 60px;
+    padding-top: 5px;
 
+    padding-left: 5px;
+    position: center;
+    display: inline-block;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+
+#site-logo {
+    background-color: #dd0000;
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#exit {
+    float: right;
+}
+
+.main-nav {
+
+    display: inline-block;
+    border-top: solid;
+    color: 	#B8860B;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.main-nav:hover {
+    border: solid;
+    border-top-color: orange;
+    background-color: #ffffff;
+    color: black;
+}
+
+.Home-blog {
+    position: relative;
 }

@@ -1,6 +1,11 @@
+
+<div id="Home-blog">
+
 <?php $this->title = 'Моята кола'; ?>
 
 <h1><?=htmlspecialchars($this -> title)?></h1>
+
+</div>
 
 <aside>
    <h2>Последни новини</h2>
@@ -22,6 +27,8 @@
         <p><?=$post['content']?></p>
     <?php endforeach ?>
 </main>
+
+
 
 
 

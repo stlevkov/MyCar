@@ -3,7 +3,7 @@
 class PostsModel extends HomeModel
 {
 
-    function getAll()
+    function getAll() : array
     {
         $statement = self::$db->query(
             "SELECT posts.id, title, content, date, full_name, user_id " .

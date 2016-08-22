@@ -16,9 +16,9 @@
                 <td><?=cutLongText($user['password_hash'])?></td>
                 <td><?=htmlspecialchars($user['username'])?></td>
                 <td>
-                    <a href="<?=APP_ROOT?>/users/edit/<?=
+                    <a href="<?=APP_ROOT?>/profiles/edit/<?=
                     htmlspecialchars($user['id'])?>">[Edit]</a>
-                    <a href="<?=APP_ROOT?>/users/delete/<?=
+                    <a href="<?=APP_ROOT?>/profiles/delete/<?=
                     htmlspecialchars($user['id'])?>">[Delete]</a>
                 </td>
 

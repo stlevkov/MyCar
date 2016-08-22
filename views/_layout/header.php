@@ -12,24 +12,31 @@
 <body>
 <header>
     <div id="site-logo">
-    <a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png" width="200" height="100"></a>
-
-        <a href="<?=APP_ROOT?>/">Начало</a>
-        <?php if ($this->isLoggedIn) { ?>
-            <a href="<?=APP_ROOT?>/posts">Новини</a>
-            <a href="<?=APP_ROOT?>/posts/create">Нова новина</a>
-            <a href="<?=APP_ROOT?>/users">Потребители</a>
-            <a href="<?=APP_ROOT?>/mycar/index">Моята кола</a>
-        <?php } else { ?>
-            <a href="<?=APP_ROOT?>/users/login">Вход</a>
-            <a href="<?=APP_ROOT?>/users/register">Регистрация</a>
-        <?php } ?>
+        <a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png" width="200" height="100"></a>
+        <div id="exit">
         <?php if ($this->isLoggedIn) { ?>
             <div class="greeting">Здравей, <?=htmlspecialchars($_SESSION['username'])?>
 
-                <a href="<?=APP_ROOT?>/users/logout">Изход</a>
+                <a class="main-nav" href="<?=APP_ROOT?>/users/logout">Изход</a>
 
             </div>
+        <?php } ?>
+        </div>
+    </div>
+
+
+
+
+    <div id="site-nav">
+        <a class="main-nav" href="<?=APP_ROOT?>/">Начало</a>
+        <?php if ($this->isLoggedIn) { ?>
+            <a class="main-nav" href="<?=APP_ROOT?>/posts">Новини</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/posts/create">Нова новина</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/profiles">Потребители</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/mycar/index">Моят профил</a>
+        <?php } else { ?>
+            <a class="main-nav" href="<?=APP_ROOT?>/users/login">Вход</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/users/register">Регистрация</a>
         <?php } ?>
     </div>
 

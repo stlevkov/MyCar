@@ -1,6 +1,6 @@
 <?php
 
-class UsersModel extends BaseModel
+class UsersModel extends HomeModel
 {
     function getAll()
     {
@@ -37,15 +37,26 @@ class UsersModel extends BaseModel
      return false;
     }
 
-    public function edit(string $id, string $title, string $content,
-                         string $date, int $user_id) : bool
+
+    public function edit(string $id, string $username, string $password_hash,
+                         string $full_name) : bool
     {
         $statement = self::$db->prepare(
-            "UPDATE posts SET title = ?, " .
-            "content = ?, date = ?, user_id = ? WHERE id = ?");
+            "UPDATE users SET username = ?, " .
+            "password_hash= ?, full_name = ? WHERE id = ?");
         $statement->bind_param("sssii",
-            $title, $content, $date, $user_id, $id);
+            $username, $password_hash, $full_name, $id);
         $statement->execute();
         return $statement->affected_rows >= 0;
+    }
+
+    public function delete(int $id) : bool
+    {
+        $statement = self::$db->prepare(
+            "DELETE FROM  users WHERE id = ?");
+        $statement->bind_param("i", $id);
+        $statement->execute();
+        return $statement->affected_rows == 1;
+
     }
 }
