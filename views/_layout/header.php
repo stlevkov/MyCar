@@ -33,7 +33,7 @@
             <a class="main-nav" href="<?=APP_ROOT?>/posts">Новини</a>
             <a class="main-nav" href="<?=APP_ROOT?>/posts/create">Нова новина</a>
             <a class="main-nav" href="<?=APP_ROOT?>/profiles">Потребители</a>
-            <a class="main-nav" href="<?=APP_ROOT?>/mycar/index">Моят профил</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/parts/index">Сменени Части</a>
         <?php } else { ?>
             <a class="main-nav" href="<?=APP_ROOT?>/users/login">Вход</a>
             <a class="main-nav" href="<?=APP_ROOT?>/users/register">Регистрация</a>

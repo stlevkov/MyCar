@@ -26,3 +26,16 @@ CREATE TABLE posts
 
 CREATE INDEX fk_users_posts_idx ON posts (user_id);
 
+CREATE TABLE parts
+(
+  id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  part_name VARCHAR(300) NOT NULL,
+  description TEXT NOT NULL,
+  date DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+  car_kilometers int(11),
+  part_life int(11),
+  user_id INT(11),
+  CONSTRAINT fk_users_parts FOREIGN KEY (user_id) REFERENCES users (id)
+);
+
+CREATE INDEX fk_users_parts_idx ON parts (user_id);
