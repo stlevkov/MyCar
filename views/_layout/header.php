@@ -15,9 +15,9 @@
         <a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png" width="200" height="100"></a>
         <div id="exit">
         <?php if ($this->isLoggedIn) { ?>
-            <div class="greeting">Здравей, <?=htmlspecialchars($_SESSION['username'])?>
+            <div class="greeting">Hello, <?=htmlspecialchars($_SESSION['username'])?>
 
-                <a class="main-nav" href="<?=APP_ROOT?>/users/logout">Изход</a>
+                <a class="main-nav" href="<?=APP_ROOT?>/users/logout">EXIT</a>
 
             </div>
         <?php } ?>
@@ -28,15 +28,27 @@
 
 
     <div id="site-nav">
-        <a class="main-nav" href="<?=APP_ROOT?>/">Начало</a>
-        <?php if ($this->isLoggedIn) { ?>
-            <a class="main-nav" href="<?=APP_ROOT?>/posts">Новини</a>
-            <a class="main-nav" href="<?=APP_ROOT?>/posts/create">Нова новина</a>
-            <a class="main-nav" href="<?=APP_ROOT?>/profiles">Потребители</a>
-            <a class="main-nav" href="<?=APP_ROOT?>/parts/index">Сменени Части</a>
-        <?php } else { ?>
-            <a class="main-nav" href="<?=APP_ROOT?>/users/login">Вход</a>
-            <a class="main-nav" href="<?=APP_ROOT?>/users/register">Регистрация</a>
+
+        <a class="main-nav" href="<?=APP_ROOT?>/">Home</a>
+        <?php
+
+        if ($this->isLoggedIn && $username = htmlspecialchars($_SESSION['username']) == 'admin') { ?>
+
+            <a class="main-nav" href="<?=APP_ROOT?>/posts">News</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/posts/create">New Post</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/parts/index">Car Status</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/parts/create">Add new part</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/profiles">Users</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/users/register">Add new user</a>
+
+        <?php } else if($this->isLoggedIn){ ?>
+            <a class="main-nav" href="<?=APP_ROOT?>/posts">News</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/posts/create">New Post</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/parts/index">Car Status</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/parts/create">Add new part</a>
+        <?php }  else { ?>
+            <a class="main-nav" href="<?=APP_ROOT?>/users/login">Login</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/users/register">Register</a>
         <?php } ?>
     </div>
 

@@ -1,6 +1,6 @@
 USE blog;
 
-INSERT INTO users (username, password_hash, full_name) VALUES ('admin', '$2y$10$QlKthcuYhn.XP/gy5A/OZeQdOzIznqxqOf/qBrSAnGpoW4labIL0W', null);
+INSERT INTO users (username, password_hash, full_name) VALUES ('admin', '$2y$10$QlKthcuYhn.XP/gy5A/OZeQdOzIznqxqOf/qBrSAnGpoW4labIL0W', 'Administrator');
 INSERT INTO users (username, password_hash, full_name) VALUES ('nakov', '$2y$10$XViubT.zSoBtskZmKl6kdOX8Yq7T7tLrcrLn/5dkAqbgjVACeFUGe', 'Svetlin Nakov');
 INSERT INTO users (username, password_hash, full_name) VALUES ('maria', '$2y$10$gzlpX/N5apTruTBajMJwM.0h9OgLVgQxk6N0YhGy2iY4BI73SYkKO', 'Maria Ivanova');
 INSERT INTO users (username, password_hash, full_name) VALUES ('ani', '$2y$10$9T9bN6ctJ4R.fdnLvzsdQOj0sk4mWqwohILMx60/jP1YEXtJguhD2', 'Ani Kirova');

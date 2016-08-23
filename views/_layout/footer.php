@@ -1,6 +1,6 @@
 
     <footer>
-        (c) Blog System, 2016
+        (c) Car parts System, 2016
     </footer>
 
     <?php include_once("show-validation-errors.php") ?>

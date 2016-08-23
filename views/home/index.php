@@ -1,14 +1,14 @@
 
 <div id="Home-blog">
 
-<?php $this->title = 'Моята кола'; ?>
+<?php $this->title = 'My Car - Part replacement system'; ?>
 
 <h1><?=htmlspecialchars($this -> title)?></h1>
 
 </div>
 
 <aside>
-   <h2>Последни новини</h2>
+   <h2>Last news</h2>
     <?php foreach ($this->postsSidebar as $post) : ?>
         <a href="<?=APP_ROOT?>/home/view/<?=$post['id']?>"><?= htmlentities($post['title'])?></a>
 
