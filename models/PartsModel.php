@@ -5,11 +5,21 @@ class PartsModel extends HomeModel
 
     function getAll() : array
     {
-        $statement = self::$db->query(
-            "SELECT parts.id, part_name, description, date, full_name, car_kilometers, part_life, user_id " .
-            "FROM parts LEFT JOIN users on parts.user_id = users.id " .
-            "ORDER BY date DESC");
-        return $statement->fetch_all(MYSQLI_ASSOC);
+        $current_user = htmlspecialchars($_SESSION['user_id']);
+        if (htmlspecialchars($_SESSION['username']) == 'admin') {
+            $statement = self::$db->query(
+                "SELECT parts.id, part_name, description, date, full_name, car_kilometers, part_life, user_id " .
+                "FROM parts LEFT JOIN users on parts.user_id = users.id " .
+                "ORDER BY date DESC");
+            return $statement->fetch_all(MYSQLI_ASSOC);
+        } else {
+            $statement = self::$db->query(
+                "SELECT parts.id, part_name, description, date, full_name, car_kilometers, part_life, user_id " .
+                "FROM parts LEFT JOIN users on parts.user_id = users.id " .
+                "WHERE users.id = $current_user " .
+                "ORDER BY date DESC");
+            return $statement->fetch_all(MYSQLI_ASSOC);
+        }
     }
 
     public function create(string $part_name, string $description, int $car_kilometers, $part_life, int $user_id) : bool

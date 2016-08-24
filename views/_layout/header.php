@@ -42,10 +42,11 @@
             <a class="main-nav" href="<?=APP_ROOT?>/users/register">Add new user</a>
 
         <?php } else if($this->isLoggedIn){ ?>
-            <a class="main-nav" href="<?=APP_ROOT?>/posts">News</a>
+
             <a class="main-nav" href="<?=APP_ROOT?>/posts/create">New Post</a>
             <a class="main-nav" href="<?=APP_ROOT?>/parts/index">Car Status</a>
             <a class="main-nav" href="<?=APP_ROOT?>/parts/create">Add new part</a>
+            <a class="main-nav" href="<?=APP_ROOT?>/checks/create">Check Status</a>
         <?php }  else { ?>
             <a class="main-nav" href="<?=APP_ROOT?>/users/login">Login</a>
             <a class="main-nav" href="<?=APP_ROOT?>/users/register">Register</a>

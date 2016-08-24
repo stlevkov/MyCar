@@ -63,3 +63,6 @@ INSERT INTO parts (part_name, description, date, car_kilometers, part_life, user
 INSERT INTO parts (part_name, description, date, car_kilometers, part_life, user_id) VALUES ('Angrenajen remak', 'Angrenaje pro 2016 ot Pro-service-Sofia', '2015-11-22 11:57:40', 180000, 130000, 2);
 INSERT INTO parts (part_name, description, date, car_kilometers, part_life,  user_id) VALUES ('Nakladki', 'PRO USER STOP WHEELS', '2015-11-22 11:57:40',184000, 40000, 5);
 
+
+
+

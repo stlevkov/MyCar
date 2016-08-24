@@ -39,3 +39,4 @@ CREATE TABLE parts
 );
 
 CREATE INDEX fk_users_parts_idx ON parts (user_id);
+
