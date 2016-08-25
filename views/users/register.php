@@ -1,6 +1,8 @@
-<?php $this->title = 'Register New User'; ?>
+<div class="body">
+    <div class="login-register-form">
+<?php $this->title = 'Register'; ?>
 
-<h1><?= htmlspecialchars($this->title) ?></h1>
+<h1 style="font-family: 'Bookman Old Style'"><?= htmlspecialchars($this->title) ?></h1>
 
 
 <form method="post">
@@ -10,3 +12,5 @@
     <div>Full name: <input type="text" name="full_name" /></div>
     <div><input type="submit" value="Register"></div>
 </form>
+    </div>
+</div>

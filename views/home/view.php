@@ -1,6 +1,6 @@
 <?php $this->title = $this->post['title']; ?>
 
-
+<div class="body">
 <main>
     <h1><?=htmlentities($this->post['title'])?></h1>
     <p>
@@ -11,3 +11,4 @@
     </p>
     <p><?=$this->post['content']?></p>
 </main>
+</div>

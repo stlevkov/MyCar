@@ -1,7 +1,8 @@
+<div class="body">
 <?php if ($username = htmlspecialchars($_SESSION['username']) == 'admin') { ?>
-    <div class="administrator">
-        <h1>Вие сте влезли като Администратор.</h1>
-        <h3>Може да правите промени и виждате, редактирате и изтривате всички данни на потребителите.</h3>
+    <div id="Home-blog">
+        <?php $this->title = 'Admin | Blog posts'; ?>
+        <h1><?=htmlspecialchars($this->title)?></h1>
     </div>
 <main>
     <table>
@@ -32,7 +33,27 @@
 </main>
 
 <?php } else { ?>
-    <div>
-        <h1>Съдържанието е достъпно само за администратор.</h1>
+    <div class="body">
+        <div id="Home-blog">
+            <?php $this->title = '|View all posts'; ?>
+            <h1><?=htmlspecialchars($this->title)?></h1>
+        </div>
+    <main>
+        <?php foreach ($this->posts as $post) : ?>
+            <div id="blog-posts">
+                <h1><?=htmlentities($post['title'])?></h1>
+                <p>
+                    <i>Posted on</i>
+                    <?=htmlentities($post['date'])?>
+                    <i>by</i>
+                    <?=htmlentities($post['full_name'])?>
+                </p>
+                <p><?=$post['content']?></p>
+            </div>
+            <br>
+            <br>
+        <?php endforeach ?>
+    </main>
     </div>
 <?php } ?>
+</div>

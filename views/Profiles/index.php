@@ -1,3 +1,4 @@
+<div class="body">
 <main>
     <table>
         <tr>
@@ -27,3 +28,4 @@
         <?php endforeach ?>
     </table>
 </main>
+</div>

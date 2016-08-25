@@ -1,3 +1,4 @@
+<div class="body">
 <div class="parts-life-box">
         <form method="get">
             <div>Оставащ живот на сменената част: Motorno Maslo TODO *Взима се от базата</div>
@@ -40,4 +41,5 @@
     </div>
 </div>
 </form>
+</div>
 </div>

@@ -1,23 +1,18 @@
-
 <div id="Home-blog">
-
-<?php $this->title = 'My Car - Part replacement system'; ?>
-
-<h1><?=htmlspecialchars($this -> title)?></h1>
-
+<?php $this->title = 'Welcome to my Car Reminder!'; ?>
+<h1><?=htmlspecialchars($this->title)?></h1>
 </div>
-
-<aside>
+<aside id="home-aside">
    <h2>Last news</h2>
     <?php foreach ($this->postsSidebar as $post) : ?>
         <a href="<?=APP_ROOT?>/home/view/<?=$post['id']?>"><?= htmlentities($post['title'])?></a>
-
     <?php endforeach ?>
 </aside>
-
+<div class="body">
 <main>
     <?php foreach ($this->posts as $post) : ?>
-       <h1><?=htmlentities($post['title'])?></h1>
+        <div id="blog-posts">
+            <h1><?=htmlentities($post['title'])?></h1>
         <p>
             <i>Posted on</i>
             <?=htmlentities($post['date'])?>
@@ -25,8 +20,12 @@
             <?=htmlentities($post['full_name'])?>
         </p>
         <p><?=$post['content']?></p>
+        </div>
+        <br>
+        <br>
     <?php endforeach ?>
 </main>
+</div>
 
 
 

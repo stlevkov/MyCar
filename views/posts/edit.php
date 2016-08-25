@@ -1,3 +1,4 @@
+<div class="body">
 <?php $this->title = 'Edit Existing Post'; ?>
 
 <h1><?=htmlspecialchars($this->title)?></h1>
@@ -18,3 +19,4 @@
      <div><input type="submit" value="Edit">
      <a href="<?=APP_ROOT?>/posts">[Cancel]</a></div>
 </form>
+</div>
