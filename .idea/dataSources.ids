@@ -106,18 +106,25 @@
       <column id="31" parent="10" name="part_life">
         <data-type>int(11)|0</data-type>
       </column>
-      <column id="32" parent="10" name="user_id">
+      <column id="32" parent="10" name="service_name">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="33" parent="10" name="archive">
+        <data-type>varchar(3)|0</data-type>
+      </column>
+      <column id="34" parent="10" name="user_id">
         <data-type>int(11)|0</data-type>
       </column>
-      <index id="33" parent="10" name="fk_users_parts_idx">
+      <index id="35" parent="10" name="fk_users_parts_idx">
         <columns>user_id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="34" parent="10" name="PRIMARY">
+      <key id="36" parent="10" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="35" parent="10" name="fk_users_parts">
+      <foreign-key id="37" parent="10" name="fk_users_parts">
         <columns>user_id</columns>
         <ref-key>~.users.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>

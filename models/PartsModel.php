@@ -8,25 +8,25 @@ class PartsModel extends HomeModel
         $current_user = htmlspecialchars($_SESSION['user_id']);
         if (htmlspecialchars($_SESSION['username']) == 'admin') {
             $statement = self::$db->query(
-                "SELECT parts.id, part_name, description, date, full_name, car_kilometers, part_life, user_id " .
+                "SELECT parts.id, part_name, description, date, full_name, car_kilometers, part_life, service_name, archive, user_id " .
                 "FROM parts LEFT JOIN users on parts.user_id = users.id " .
                 "ORDER BY date DESC");
             return $statement->fetch_all(MYSQLI_ASSOC);
         } else {
-            $statement = self::$db->query(
-                "SELECT parts.id, part_name, description, date, full_name, car_kilometers, part_life, user_id " .
-                "FROM parts LEFT JOIN users on parts.user_id = users.id " .
-                "WHERE users.id = $current_user " .
-                "ORDER BY date DESC");
-            return $statement->fetch_all(MYSQLI_ASSOC);
+                $statement = self::$db->query(
+                    "SELECT parts.id, part_name, description, date, full_name, car_kilometers, part_life, service_name, archive, user_id " .
+                    "FROM parts LEFT JOIN users on parts.user_id = users.id " .
+                    "WHERE users.id = $current_user " .
+                    "ORDER BY date DESC");
+                return $statement->fetch_all(MYSQLI_ASSOC);
         }
     }
 
-    public function create(string $part_name, string $description, int $car_kilometers, $part_life, int $user_id) : bool
+    public function create(string $part_name, string $description, int $car_kilometers, $part_life, $service_name, $archive, int $user_id) : bool
     {
         $statement = self::$db->prepare(
-            "INSERT INTO parts(part_name, description, car_kilometers, part_life, user_id) VALUES(?, ?, ?, ?, ?)");
-        $statement->bind_param("ssiii", $part_name, $description, $car_kilometers, $part_life, $user_id);
+            "INSERT INTO parts(part_name, description, car_kilometers, part_life, service_name, archive, user_id) VALUES(?, ?, ?, ?, ?, ?, ?)");
+        $statement->bind_param("ssiissi", $part_name, $description, $car_kilometers, $part_life, $service_name, $archive, $user_id);
         $statement->execute();
         return $statement->affected_rows == 1;
 

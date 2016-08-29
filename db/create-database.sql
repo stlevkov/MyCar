@@ -34,6 +34,8 @@ CREATE TABLE parts
   date DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
   car_kilometers int(11),
   part_life int(11),
+  service_name TEXT NOT NULL,
+  archive VARCHAR(3),
   user_id INT(11),
   CONSTRAINT fk_users_parts FOREIGN KEY (user_id) REFERENCES users (id)
 );

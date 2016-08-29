@@ -14,6 +14,6 @@
         <input type="text" name="post_date" value="<?=
         htmlspecialchars($this->post['date'])?>" />
         <div><input type="submit" value="Edit">
-            <a href="<?=APP_ROOT?>/posts">[Cancel]</a></div>
+            <a href="<?=APP_ROOT?>/myposts">[Cancel]</a></div>
     </form>
 </div>

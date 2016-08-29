@@ -1,6 +1,6 @@
 <div class="body">
 <?php if ($username = htmlspecialchars($_SESSION['username']) == 'admin') { ?>
-    <div id="Home-blog">
+    <div class="home-blog">
         <?php $this->title = 'Admin | Blog posts'; ?>
         <h1><?=htmlspecialchars($this->title)?></h1>
     </div>
@@ -34,21 +34,27 @@
 
 <?php } else { ?>
     <div class="body">
-        <div id="Home-blog">
-            <?php $this->title = '|View all posts'; ?>
+        <div class="page-header">
+            <?php $this->title = 'View all posts'; ?>
             <h1><?=htmlspecialchars($this->title)?></h1>
         </div>
-    <main>
+            <main>
         <?php foreach ($this->posts as $post) : ?>
             <div id="blog-posts">
-                <h1><?=htmlentities($post['title'])?></h1>
-                <p>
-                    <i>Posted on</i>
-                    <?=htmlentities($post['date'])?>
-                    <i>by</i>
-                    <?=htmlentities($post['full_name'])?>
-                </p>
-                <p><?=$post['content']?></p>
+                <div id="posts-header">
+                  <h1><?=htmlentities($post['title'])?></h1>
+                    <p>
+                      <i>Posted on</i>
+                      <?=htmlentities($post['date'])?>
+                      <i>by</i>
+                      <?=htmlentities($post['full_name'])?>
+                    </p>
+                </div>
+                <br>
+                <div id="posts-content">
+                    <p><?=$post['content']?></p>
+                </div>
+
             </div>
             <br>
             <br>
@@ -57,3 +63,5 @@
     </div>
 <?php } ?>
 </div>
+<div id="button-scroll-up" onclick="location.href='#scroll-up';" style="cursor:pointer;"></div>
+

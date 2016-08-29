@@ -1,12 +1,9 @@
-
+<div id="footer">
     <footer>
-        (c) Car parts System, 2016
+        (c) Car Reminder, 2016   Developed by Stoycho Levkov.
     </footer>
-
+</div>
     <?php include_once("show-validation-errors.php") ?>
-
     <?php include_once("fill-posted-fields.php") ?>
-
-</body>
-
+    </body>
 </html>

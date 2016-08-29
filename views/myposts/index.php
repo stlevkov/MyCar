@@ -1,8 +1,9 @@
 <div class="body">
-<div id="Home-blog">
-        <?php $this->title = 'Admin | Blog posts'; ?>
+<div class="page-header">
+        <?php $this->title = 'My Blog posts'; ?>
 <h1><?=htmlspecialchars($this->title)?></h1>
 </div>
+
 <main>
     <table>
         <tr>
@@ -20,9 +21,10 @@
                 <td><?=htmlspecialchars($post['full_name'])?></td>
                 <td>
                     <a href="<?=APP_ROOT?>/myposts/edit/<?=
-                    htmlspecialchars($post['id'])?>">[Edit]</a>
+                    htmlspecialchars($post['id'])?>">Edit</a>
+                    <br>
                     <a href="<?=APP_ROOT?>/myposts/delete/<?=
-                    htmlspecialchars($post['id'])?>">[Delete]</a>
+                    htmlspecialchars($post['id'])?>">Delete</a>
                 </td>
             </tr>
         <?php endforeach ?>

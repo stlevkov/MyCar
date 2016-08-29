@@ -1,8 +1,4 @@
 <?php
-
-
-
-
 if (isset($_SESSION['messages'])){
     echo "<ul id='messages'>";
     $messages = $_SESSION['messages'];

@@ -59,9 +59,9 @@ INSERT INTO posts (title, content, date, user_id) VALUES ('Rogue Wave Updates Ze
 
 <p>“I’m extremely proud of the work we’ve done with Expressive,” said Matthew Weier O’Phinney, principal engineer and Zend Framework project lead at Rogue Wave. “Expressive signals the future of PHP applications, composed of layered, single-purpose PSR-7 middleware.”</p>
 ', '2015-11-22 11:57:40', 5);
-INSERT INTO parts (part_name, description, date, car_kilometers, part_life, user_id) VALUES ('Motorno Maslo', 'EKO DIESEL ENGINE OIL from Gencho', '2015-11-22 11:57:40', 183000, 80000, 5);
-INSERT INTO parts (part_name, description, date, car_kilometers, part_life, user_id) VALUES ('Angrenajen remak', 'Angrenaje pro 2016 ot Pro-service-Sofia', '2015-11-22 11:57:40', 180000, 130000, 2);
-INSERT INTO parts (part_name, description, date, car_kilometers, part_life,  user_id) VALUES ('Nakladki', 'PRO USER STOP WHEELS', '2015-11-22 11:57:40',184000, 40000, 5);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Motorno Maslo', 'EKO DIESEL ENGINE OIL from Gencho', '2015-11-22 11:57:40', 183000, 80000, 'CAR-PRO-SOFIA', 'yes', 5);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Angrenajen remak', 'Angrenaje pro 2016 ot Pro-service-Sofia', '2015-11-22 11:57:40', 180000, 130000, 'Mobile auto Zapaden park Sofia','no', 2);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Nakladki', 'PRO USER STOP WHEELS', '2015-11-22 11:57:40',184000, 40000, 'Peugeot official service Liulin Sofia','yes', 5);
 
 
 

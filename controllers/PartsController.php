@@ -31,9 +31,17 @@ class PartsController extends BaseController
             if (strlen($part_life) < 1) {
                 $this->setValidationError("part_life", "The part life cannot be empty!");
             }
+            $service_name = $_POST['service_name'];
+            if (strlen($service_name) < 1) {
+                $this->setValidationError("service_name", "The service name cannot be empty!");
+            }
+            $archive = $_POST['archive'];
+            if (strlen($archive) < 1) {
+                $this->setValidationError("archive", "The Part Status Value cannot be empty!");
+            }
             if ($this->formValid()){
                 $userId = $_SESSION['user_id'];
-                if ($this->model->create($part_name, $description, $car_kilometers, $part_life, $userId)) {
+                if ($this->model->create($part_name, $description, $car_kilometers, $part_life, $service_name, $archive, $userId)) {
                     $this->addInfoMessage("Part replacement created.");
                     $this->redirect("parts");
                 } else {
@@ -43,7 +51,5 @@ class PartsController extends BaseController
             }
         }
     }
-
-
 
 }

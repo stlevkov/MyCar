@@ -9,23 +9,24 @@
     <title><?php if (isset($this->title)) echo htmlspecialchars($this->title) ?></title>
 </head>
 
-<body>
 <header>
+    <div id="scroll-up"></div>
     <div id="site-logo">
         <a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png" width="200" height="100"></a>
         <?php if ($this->isLoggedIn) { ?>
-            <div class="greeting">
-                  Hello,  <?=htmlspecialchars($_SESSION['username'])?>
-                <a class="main-nav" href="<?=APP_ROOT?>/users/logout">EXIT</a>
+            <div id="greeting">
+                Hello,  <?=htmlspecialchars($_SESSION['username'])?>
+                <div class="exit-button"><a href="<?=APP_ROOT?>/users/logout">EXIT</a></div>
             </div>
         <?php } ?>
+    </div>
         <div id="site-nav">
-            <a class="main-nav" href="<?=APP_ROOT?>/">Home</a>
+            <li><a class="main-nav" href="<?=APP_ROOT?>/">Home</a></li>
             <?php
             if ($this->isLoggedIn && $username = htmlspecialchars($_SESSION['username']) == 'admin') { ?>
-                <a class="main-nav" href="<?=APP_ROOT?>/posts/create">New Post</a>
-                <a class="main-nav" href="<?=APP_ROOT?>/parts/create">Add new part</a>
-                <a class="main-nav" href="<?=APP_ROOT?>/users/register">Add new user</a>
+            <li><a class="main-nav" href="<?=APP_ROOT?>/posts/create">New Post</a></li>
+            <li><a class="main-nav" href="<?=APP_ROOT?>/parts/create">Add new part</a></li>
+            <li><a class="main-nav" href="<?=APP_ROOT?>/users/register">Add new user</a></li>
                 <div class="dropdown">
                     <button class="main-nav">Admin Menu</button>
                     <div class="dropdown-content">
@@ -35,17 +36,23 @@
                     </div>
                 </div>
             <?php } else if($this->isLoggedIn){ ?>
-                <a class="main-nav" href="<?=APP_ROOT?>/posts">Blog</a>
-                <a class="main-nav" href="<?=APP_ROOT?>/myposts">View My posts</a>
-                <a class="main-nav" href="<?=APP_ROOT?>/posts/create">New Post</a>
-                <a class="main-nav" href="<?=APP_ROOT?>/parts/index">Car Status</a>
-                <a class="main-nav" href="<?=APP_ROOT?>/parts/create">Add new part</a>
+                    <li><a href="<?=APP_ROOT?>/posts">Blog</a></li>
+                    <li><a href="<?=APP_ROOT?>/myposts">View My posts</a></li>
+                    <li><a href="<?=APP_ROOT?>/posts/create">New Post</a></li>
+                    <li><a href="<?=APP_ROOT?>/parts/index">Car Status</a></li>
+                    <li><a href="<?=APP_ROOT?>/parts/create">Add new part</a></li>
+
+
             <?php }  else { ?>
-                <a class="main-nav" href="<?=APP_ROOT?>/users/login">Login</a>
-                <a class="main-nav" href="<?=APP_ROOT?>/users/register">Register</a>
+
+                <li><a class="main-nav" href="<?=APP_ROOT?>/users/login">Login</a></li>
+                <li><a class="main-nav" href="<?=APP_ROOT?>/users/register">Register</a></li>
+                </>
             <?php } ?>
+
         </div>
-    </div>
+
 </header>
+<body>
 
 <?php include_once "messages.php" ?>
