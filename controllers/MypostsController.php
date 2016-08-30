@@ -86,7 +86,7 @@ class MyPostsController extends BaseController
                     } else {
                         $this->addErrorMessage("Error: cannot edit post.");
                     }
-                    $this->redirect('posts');
+                    $this->redirect('myposts');
                 }
             }
 
@@ -98,7 +98,5 @@ class MyPostsController extends BaseController
                 $this->redirect("posts");
             }
             $this->post = $post;
-
-
     }
 }

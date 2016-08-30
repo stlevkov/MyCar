@@ -1,9 +1,10 @@
 <div class="body">
 <?php if ($username = htmlspecialchars($_SESSION['username']) == 'admin') { ?>
-    <div class="home-blog">
-        <?php $this->title = 'Admin | Blog posts'; ?>
-        <h1><?=htmlspecialchars($this->title)?></h1>
-    </div>
+    <div class="body">
+        <div class="page-header">
+            <?php $this->title = 'All Posts'; ?>
+            <h1><?=htmlspecialchars($this->title)?></h1>
+        </div>
 <main>
     <table>
         <tr>

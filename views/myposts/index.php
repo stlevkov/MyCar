@@ -29,5 +29,6 @@
             </tr>
         <?php endforeach ?>
     </table>
+    <div id="button-scroll-up" onclick="location.href='#scroll-up';" style="cursor:pointer;"></div>
 </main>
 </div>

@@ -1,15 +1,26 @@
 <div class="body">
-<?php $this->title = 'Delete user?'; ?>
-
-<h1 style="font-family: 'Bookman Old Style'"><?=htmlspecialchars($this->title)?></h1>
-
-<form method="post">
-    <div>Username:</div>
-    <input type="text" name="user_name" disabled
-           value="<?=htmlspecialchars($this->user['username'])?>" />
-    <div>Password hash:</div>
-    <textarea style="width: 450px " name="user_password" disabled><?=htmlspecialchars($this->user['password_hash'])?></textarea>
-    <div><input type="submit" value="Delete"/>
-        <a href="<?=APP_ROOT?>/profiles">[Cancel]</a></div>
-</form>
+    <div class="page-header">
+        <?php $this->title = 'Delete User'; ?>
+        <h1><?=htmlspecialchars($this->title)?></h1>
+    </div>
+    <br>
+    <br>
+    <div class="create-new-form">
+        <div id="progress-bar-message-override" style="font-size: 50px;">Are you sure you want to delete this user?</div>
+      <form method="post">
+          <div class="create-new-post-header">Username</div>
+          <input type="text" name="user_name" disabled value="<?=
+          htmlspecialchars($this->user['username'])?>" />
+          <div class="create-new-post-header">Password</div>
+        <input type="text" name="user_password" disabled
+               value="<?=htmlspecialchars($this->user['password_hash'])?>" />
+          <br>
+          <br>
+          <div><input type="submit" value="delete"/>
+              <br>
+              <div class="cancel-button">
+                 <a href="<?=APP_ROOT?>/profiles">Cancel</a></div>
+              </div>
+      </form>
+    </div>
 </div>

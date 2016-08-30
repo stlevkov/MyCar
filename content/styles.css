@@ -6,8 +6,24 @@
     margin: 0;
 }
 
+.admin-nav>a{
+    font-family: sans-serif;
+    height: 30px;
+    width: 220px;
+    background-color: #555;
+    text-align: center;
+    font-size: 19px;
+    border-bottom: solid 2px white;
+}
+.admin-nav>a:hover{
+
+    background-color: orangered;
+    color: white;
+    text-align: center;
+}
+
 .main-nav {
-    height: 70px;
+    height: 50px;
 }
 #button-scroll-down {
     width: 300px;
@@ -114,7 +130,9 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
+    font-family: sans-serif;
     background-color: orangered;
+    color: white;
 }
 
 .exit-button>a  {
@@ -126,7 +144,7 @@ li a:hover {
     display: inline-block;
     color: white;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 8px;
     text-decoration: none;
 }
 .exit-button a:hover {
@@ -226,7 +244,10 @@ body>main:after {
 
 /* Hello, $user Message */
 #greeting {
-    float:  right;
+    font-size: 23px;
+    float: right;
+    position: relative;
+    display: inline-block;
     font-family: sans-serif;
 }
 
@@ -235,24 +256,25 @@ body>main:after {
 
 /* INFO and ERROR messages WHEN APPEARED */
 ul#messages li {
+    font-size: 25px;
+    font-family: "sans-serif";
     display: block;
-    width: 80%;
+    width: 40%;
+    height: 32px;
     margin: 5px auto;
     text-align: center;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 7px;
+
 }
 
 ul#messages li.info {
-    background: rgb(180,227,145); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(180,227,145,1) 0%, rgba(97,196,25,1) 50%, rgba(180,227,145,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
     font-family: sans-serif;
+    background: orange;
+    color: white;
 }
 
 ul#messages li.error {
+    font-family:sans-serif;
     background: #d00;
     color: white;
 }
@@ -304,37 +326,6 @@ ul#messages li.error {
     width: 98%;
 }
 
-
-
-.login-register-form {
-    border-radius: 5px;
-    position: relative;
-    margin-top: 100px;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    background: rgb(224,243,250); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(224,243,250,1) 0%, rgba(216,240,252,1) 50%, rgba(184,226,246,1) 51%, rgba(182,223,253,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
-    width: 200px;
-}
-
-
-.create-delete-form {
-    border-radius: 5px;
-    position: relative;
-    margin-top: 100px;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    background: rgb(224,243,250); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(224,243,250,1) 0%, rgba(216,240,252,1) 50%, rgba(184,226,246,1) 51%, rgba(182,223,253,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
-    width: 200px;
-}
-
 .new-post-form {
      position: relative;
 
@@ -342,7 +333,7 @@ ul#messages li.error {
      padding-bottom: 100px;
 
  }
-.create-new-post {
+.create-new-form {
     margin-top: 50px;
     text-align: center;
     display: block;
@@ -373,18 +364,19 @@ ul#messages li.error {
     padding: 20px;
     font-family:sans-serif;
 }
-.new-part-form {
-    border-radius: 5px;
-    position: relative;
-    margin-top: 100px;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    background: rgb(224,243,250); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(224,243,250,1) 0%, rgba(216,240,252,1) 50%, rgba(184,226,246,1) 51%, rgba(182,223,253,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(224,243,250,1) 0%,rgba(216,240,252,1) 50%,rgba(184,226,246,1) 51%,rgba(182,223,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
-    width: 15em;
+
+
+
+/* ALL BUTTONS HERE */
+
+#option-button
+{
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #777;
+    height: 60px;
+    padding-left: 10px;
+    text-decoration: none;
 }
 
 #change-button {
@@ -402,14 +394,16 @@ input[type=text]
     text-decoration: none;
 }
 
+
+
 input[type=password]
 {
-    color: #979797;
-    height: 28px;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #777;
+    height: 60px;
     padding-left: 10px;
     text-decoration: none;
-    border-radius: 5px; /*up to date browsers support this, but you can add prefixes if you want*/
-    border: 0;
 }
 input[type=number]
 {
@@ -459,8 +453,14 @@ input[type=submit]:hover {
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
+    width: 190px;
     position: relative;
     display: inline-block;
+}
+
+#drop-down-button button{
+    height: 50px;
+    width: 150px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -485,6 +485,8 @@ input[type=submit]:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* TABLE td th DESIGN */
 
 
 table {
@@ -520,7 +522,7 @@ td a {
     display: inline-block;
     position: relative;
     width: 80%;
-    padding: 10px;
+    padding: 12px;
     background-color: #555;
 }
 
@@ -536,7 +538,7 @@ td:hover {
 
 }
 
-/* CAR REMINDER APP */
+/* CAR REMINDER APP PROGRESS BAR */
 .progress-bar{
     margin: auto;
     position: relative;
@@ -586,11 +588,11 @@ td:hover {
 }
 
 #progress-bar-in-percents{
-
     font-size: 60px;
     font-family:"Bookman Old Style";
     padding: 5px;
     float: right;
+    color: #111;
 }
 
 .progress-bar-in-override{
@@ -655,6 +657,15 @@ td:hover {
     font-size: 27px;
 }
 
-
+#part-replacement-header {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+#part-replacement-name{
+    color: orange;
+    font-family: sans-serif;
+    font-size: 40px;
+}
 
 

@@ -1,15 +1,26 @@
 <div class="body">
-<?php $this->title = 'Delete post?'; ?>
-
-<h1><?=htmlspecialchars($this->title)?></h1>
-
-<form method="post">
-    <div>Title:</div>
-    <input type="text" name="post_title" disabled
-           value="<?=htmlspecialchars($this->post['title'])?>" />
-    <div>Content:</div>
-    <textarea rows="10" name="post_content" disabled><?=htmlspecialchars($this->post['content'])?></textarea>
-    <div><input type="submit" value="Delete"/>
-        <a href="<?=APP_ROOT?>/posts">[Cancel]</a></div>
+    <div class="page-header">
+        <?php $this->title = 'Delete Post'; ?>
+        <h1><?=htmlspecialchars($this->title)?></h1>
+    </div>
+    <br>
+    <br>
+    <div class="create-new-form">
+        <div id="progress-bar-message-override" style="font-size: 50px;">Are you sure you want to delete this Post?</div>
+            <form method="post">
+            <div class="create-new-post-header">Title</div>
+            <input type="text" name="post_title" disabled
+            value="<?=htmlspecialchars($this->post['title'])?>" />
+            <div class="create-new-post-header">Content</div>
+            <textarea id="post-description" disabled><?=
+                htmlspecialchars($this->post['content'])?></textarea>
+            <br>
+            <br>
+                <div><input type="submit" value="Delete"/>
+                    <div class="cancel-button">
+                    <a href="<?=APP_ROOT?>/posts">Cancel</a></div>
+                </div>
+            <br>
+            <br>
 </form>
 </div>

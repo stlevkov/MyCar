@@ -21,4 +21,6 @@ class HomeController extends BaseController
         }
         $this->post = $post;
     }
+
+
 }

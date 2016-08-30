@@ -15,8 +15,7 @@
         <a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png" width="200" height="100"></a>
         <?php if ($this->isLoggedIn) { ?>
             <div id="greeting">
-                Hello,  <?=htmlspecialchars($_SESSION['username'])?>
-                <div class="exit-button"><a href="<?=APP_ROOT?>/users/logout">EXIT</a></div>
+                <div class="exit-button"><y style="font-size: 30px;" >Hello,</y> <i style="margin-right: 20px; font-family: 'sans-serif'; font-size: 35px;"><?=htmlspecialchars($_SESSION['username'])?></i><a href="<?=APP_ROOT?>/users/logout">EXIT</a></div>
             </div>
         <?php } ?>
     </div>
@@ -28,11 +27,11 @@
             <li><a class="main-nav" href="<?=APP_ROOT?>/parts/create">Add new part</a></li>
             <li><a class="main-nav" href="<?=APP_ROOT?>/users/register">Add new user</a></li>
                 <div class="dropdown">
-                    <button class="main-nav">Admin Menu</button>
+                    <li><a class="main-nav">Admin Menu</a></li>
                     <div class="dropdown-content">
-                        <a class="main-nav" href="<?=APP_ROOT?>/posts">Posts</a>
-                        <a class="main-nav" href="<?=APP_ROOT?>/parts/index">Parts</a>
-                        <a class="main-nav" href="<?=APP_ROOT?>/profiles">Users</a>
+                        <div class="admin-nav"> <a href="<?=APP_ROOT?>/posts">Posts</a></div>
+                        <div class="admin-nav"><a  href="<?=APP_ROOT?>/parts/index">Parts</a></div>
+                            <div class="admin-nav"><a  href="<?=APP_ROOT?>/profiles">Users</a></div>
                     </div>
                 </div>
             <?php } else if($this->isLoggedIn){ ?>

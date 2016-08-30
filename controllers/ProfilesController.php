@@ -17,10 +17,11 @@ class ProfilesController extends BaseController
         if (htmlspecialchars($_SESSION['username']) == 'admin') {
             if ($this->isPost) {
                 if ($this->model->delete($id)) {
-                    $this->addInfoMessage("Потребителят беше успешно изтрит.");
+                    $this->addInfoMessage("User deleted.");
                 } else {
-                    $this->addErrorMessage("Грешка: Потребителят не може да бъде изтрит!");
-                    $this->addErrorMessage("Проверете дали потребителят няма публикувани новини!");
+                    $this->addErrorMessage("Error: You cannot delete this user!");
+                    $this->addErrorMessage("Check if user have posts and parts data!");
+                    $this->redirect("posts");
                 }
                 $this->redirect('profiles');
             } else {
@@ -32,7 +33,7 @@ class ProfilesController extends BaseController
                 $this->user = $user;
             }
         } else {
-            $this->redirect('errors');
+            $this->redirect('home');
         }
     }
 
@@ -52,7 +53,6 @@ class ProfilesController extends BaseController
                 if ($this->formValid()) {
                     if ($this->model->edit($username, $full_name, $id)) {
                         $this->addInfoMessage("user edited.");
-                        $this->addErrorMessage("You need to logout and login to update browser data!");
                     } else {
                         $this->addErrorMessage("Error: cannot edit user.");
                     }
@@ -66,7 +66,7 @@ class ProfilesController extends BaseController
             }
             $this->user = $user;
         } else {
-            $this->redirect('errors');
+            $this->redirect('home');
         }
     }
 }

@@ -36,6 +36,7 @@ CREATE TABLE parts
   part_life int(11),
   service_name TEXT NOT NULL,
   archive VARCHAR(3),
+  date_replaced DATETIME,
   user_id INT(11),
   CONSTRAINT fk_users_parts FOREIGN KEY (user_id) REFERENCES users (id)
 );
