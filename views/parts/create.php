@@ -15,6 +15,8 @@
                <input type="text" name="part_life" />
                <div class="create-new-post-header">Service Name</div>
                <input type="text" name="service_name" />
+               <div class="create-new-post-header">Part Price [Лв]</div>
+               <input type="text" name="part_price" />
                <br>
                <br>
                <div class="create-new-post-header">Kind of Part</div>

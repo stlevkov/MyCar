@@ -550,6 +550,13 @@ td:hover {
     background-color: #333;
 
 }
+#progress-bar-part-price{
+
+    color: #ff521c;
+    font-family: "Bookman Old Style";
+    font-size: 40px;
+}
+
 #change-button{
     height: 30px;
     width: 100px;

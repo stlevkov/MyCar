@@ -35,6 +35,10 @@ class PartsController extends BaseController
             if (strlen($service_name) < 1) {
                 $this->setValidationError("service_name", "The service name cannot be empty!");
             }
+            $part_price = $_POST['part_price'];
+            if (strlen($part_price) < 1) {
+                $this->setValidationError("part_price", "Price cannot be empty! Type 0 if its gift");
+            }
             $archive = $_POST['archive'];
             if (strlen($archive) < 1) {
                 $this->setValidationError("archive", "The Part Status Value cannot be empty!");
@@ -46,7 +50,7 @@ class PartsController extends BaseController
             }
             if ($this->formValid()){
                 $userId = $_SESSION['user_id'];
-                if ($this->model->create($part_name, $description, $car_kilometers, $part_life, $service_name, $archive, $date, $userId)) {
+                if ($this->model->create($part_name, $description, $car_kilometers, $part_life, $service_name,$part_price, $archive,  $date, $userId)) {
                     $this->addInfoMessage("Part replacement created.");
                     $this->redirect("parts");
                 } else {
@@ -118,6 +122,10 @@ class PartsController extends BaseController
             if (strlen($service_name) < 1) {
                 $this->setValidationError("service_name", "Where was the replacement location?");
             }
+            $part_price = $_POST['part_price'];
+            if (strlen($part_price) < 1) {
+                $this->setValidationError("part_price", "Part price cannot be empty! type 0 if its gift!");
+            }
             $archive = $_POST['archive'];
             if (strlen($archive) < 1) {
                 $this->setValidationError("archive", "Must be 'Yes' or 'No'! Default is 'No'");
@@ -129,7 +137,7 @@ class PartsController extends BaseController
                 $this->setValidationError("post_date", "Invalid date!");
             }
             if ($this->formValid()) {
-                if ($this->model->edit($part_name, $description, $car_kilometers, $part_life, $service_name, $archive, $date, $id )) {
+                if ($this->model->edit($part_name, $description, $car_kilometers, $part_life, $service_name, $archive, $part_price, $date, $id )) {
                     $this->addInfoMessage("Part edited.");
                 } else {
                     $this->addErrorMessage("Error: cannot edit part.");

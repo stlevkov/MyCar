@@ -22,6 +22,9 @@
         <div class="create-new-post-header">Service Name</div>
         <input type="text" name="service_name" value="<?=
         htmlspecialchars($this->part['service_name'])?>" />
+        <div class="create-new-post-header">Part Price[лв]</div>
+        <input type="text" name="part_price" value="<?=
+        htmlspecialchars($this->part['part_price'])?>" />
         <div class="create-new-post-header">Replaced or still new part?</div>
         <br>
         <select id="option-button" name="archive">

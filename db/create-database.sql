@@ -37,6 +37,7 @@ CREATE TABLE parts
   service_name TEXT NOT NULL,
   archive VARCHAR(3),
   date_replaced DATETIME,
+  part_price int (11),
   user_id INT(11),
   CONSTRAINT fk_users_parts FOREIGN KEY (user_id) REFERENCES users (id)
 );

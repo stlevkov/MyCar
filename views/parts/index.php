@@ -17,6 +17,7 @@
             <th>Part Life</th>
             <th>Replaced?</th>
             <th>Date Replaced</th>
+            <th>Part Price</th>
             <th>Actions</th>
         </tr>
         <?php foreach ($this->parts as $part ) : ?>
@@ -31,6 +32,7 @@
                 <td><?=htmlspecialchars($part['part_life'])?></td>
                 <td><?=htmlspecialchars($part['archive'])?></td>
                 <td><?=htmlspecialchars($part['date_replaced'])?></td>
+                <td><?=htmlspecialchars($part['part_price'])?></td>
                 <td>
                     <a href="<?=APP_ROOT?>/parts/edit/<?=
                     htmlspecialchars($part['id'])?>">[Edit]</a>
@@ -58,8 +60,8 @@
                 <th>Part Life [km]</th>
                 <th>Replaced?</th>
                 <th>Date Replaced</th>
+                <th>Part Price [лв]</th>
                 <th>Actions</th>
-
             </tr>
 
                 <?php foreach ($this->parts as $part ) : ?>
@@ -72,6 +74,7 @@
                         <td><?=htmlspecialchars($part['part_life'])?></td>
                         <td><?=htmlspecialchars($part['archive'])?></td>
                         <td><?=htmlspecialchars($part['date_replaced'])?></td>
+                        <td><?=htmlspecialchars($part['part_price'])?></td>
                         <td>
                             <a href="<?=APP_ROOT?>/parts/edit/<?=
                             htmlspecialchars($part['id'])?>">Edit</a>
@@ -121,6 +124,8 @@
                <div class="progress-bar-header">Part Name: <i><?=htmlspecialchars($part['part_name']) ?></i></div>
                <div class="progress-bar-header">Installed on: <i><?=htmlspecialchars($part['date']) ?> </i></div>
                <div class="progress-bar-header">by <i><?=htmlspecialchars($part['service_name']) ?></i></div><br>
+                <div id="progress-bar-part-price">Spend <?=htmlspecialchars($part['part_price']) ?> лв.</div>
+               <br>
              <?php
                if  ($left_kilometers > $part_life) {
                  echo "<div id='progress-bar-message-override'>Consider that you need to replace that part!</div>";

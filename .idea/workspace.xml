@@ -32,20 +32,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - blog@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="users" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -53,18 +39,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="create-database.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/create-database.sql">
+      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/parts/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="25" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="561">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.users" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/b6f8ec9a/fccf92e6-3dce-4687-b2bb-f4a661da5ea6/blog.users">
+      <file leaf-file-name="create-database.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/create-database.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insert-sample-data.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/insert-sample-data.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.parts" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/b6f8ec9a/fccf92e6-3dce-4687-b2bb-f4a661da5ea6/blog.parts">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -78,70 +84,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="insert-sample-data.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/insert-sample-data.sql">
+      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/parts/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="500">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/users/login.php">
+      <file leaf-file-name="PartsModel.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/PartsModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/users/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_layout/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/UsersModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="312">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <marker date="1471766351904" expanded="true" signature="489:560" ph="INSERT INTO users... " />
-                <marker date="1471766351904" expanded="true" signature="979:1033" ph="SELECT id, p... users" />
-                <marker date="1471766351904" expanded="true" signature="1471:1563" ph="UPDATE users... " />
-                <marker date="1471766351904" expanded="true" signature="1852:1883" ph="DELETE FROM " />
+                <marker date="1472661928760" expanded="true" signature="1787:1939" ph="INSERT INTO posts... " />
+                <marker date="1472661928760" expanded="true" signature="2436:2550" ph="UPDATE parts... " />
+                <marker date="1472661928760" expanded="true" signature="2436:2606" ph="UPDATE parts... " />
+                <marker date="1472661928760" expanded="true" signature="3021:3038" ph="UPDATE parts... " />
+                <marker date="1472661928760" expanded="true" signature="3021:3053" ph="UPDATE parts... " />
+                <marker date="1472661928760" expanded="true" signature="3021:3096" ph="UPDATE parts... " />
+                <marker date="1472661928760" expanded="true" signature="3371:3401" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostsModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/PostsModel.php">
+      <file leaf-file-name="PostsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/PostsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="767">
+              <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
               <folding>
-                <marker date="1471765522206" expanded="true" signature="501:559" ph="INSERT INTO posts... " />
-                <marker date="1471765522206" expanded="true" signature="819:849" ph="DELETE FROM " />
-                <marker date="1471765522206" expanded="true" signature="1170:1258" ph="UPDATE posts... " />
+                <element signature="n#onInit#0;n#PostsController#0;n#!!top" expanded="false" />
+                <element signature="n#delete#0;n#PostsController#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -150,19 +128,35 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/parts/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="129" column="23" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
+            <state relative-caret-position="327">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="replace.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/parts/replace.php">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="277">
+              <caret line="554" column="19" selection-start-line="554" selection-start-column="19" selection-end-line="554" selection-end-column="19" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/PartsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+              <folding>
+                <element signature="n#onInit#0;n#PartsController#0;n#!!top" expanded="false" />
+                <element signature="n#index#0;n#PartsController#0;n#!!top" expanded="false" />
+                <element signature="n#create#0;n#PartsController#0;n#!!top" expanded="false" />
+                <element signature="n#replace#0;n#PartsController#0;n#!!top" expanded="false" />
+                <element signature="n#delete#0;n#PartsController#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -189,7 +183,6 @@
         <option value="$PROJECT_DIR$/views/checks/index.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fccf92e6-3dce-4687-b2bb-f4a661da5ea6/console.sql" />
         <option value="$PROJECT_DIR$/views/errors/index.php" />
-        <option value="$PROJECT_DIR$/views/Profiles/index.php" />
         <option value="$PROJECT_DIR$/models/PostsModel.php" />
         <option value="dbtable:/b6f8ec9a/fccf92e6-3dce-4687-b2bb-f4a661da5ea6/blog.parts" />
         <option value="$PROJECT_DIR$/views/_layout/footer.php" />
@@ -199,7 +192,6 @@
         <option value="$PROJECT_DIR$/views/parts/status.php" />
         <option value="$PROJECT_DIR$/views/parts/change.php" />
         <option value="$PROJECT_DIR$/controllers/PostsController.php" />
-        <option value="$PROJECT_DIR$/models/PartsModel.php" />
         <option value="$PROJECT_DIR$/content/scripts/blog-scripts.js" />
         <option value="$PROJECT_DIR$/content/scripts/ui.js" />
         <option value="$PROJECT_DIR$/views/users/login.php" />
@@ -213,23 +205,25 @@
         <option value="$PROJECT_DIR$/views/Profiles/edit.php" />
         <option value="$PROJECT_DIR$/views/Profiles/delete.php" />
         <option value="$PROJECT_DIR$/views/posts/edit.php" />
-        <option value="$PROJECT_DIR$/views/parts/index.php" />
-        <option value="$PROJECT_DIR$/views/parts/create.php" />
-        <option value="$PROJECT_DIR$/content/styles.css" />
-        <option value="$PROJECT_DIR$/views/parts/edit.php" />
         <option value="$PROJECT_DIR$/views/parts/delete.php" />
         <option value="$PROJECT_DIR$/views/myposts/edit.php" />
         <option value="$PROJECT_DIR$/controllers/MypostsController.php" />
         <option value="$PROJECT_DIR$/views/posts/delete.php" />
         <option value="$PROJECT_DIR$/views/myposts/delete.php" />
-        <option value="$PROJECT_DIR$/controllers/PartsController.php" />
         <option value="$PROJECT_DIR$/models/MypostsModel.php" />
         <option value="$PROJECT_DIR$/views/imageUploads/index.php" />
         <option value="$PROJECT_DIR$/views/images/index.php" />
         <option value="$PROJECT_DIR$/controllers/ImagesController.php" />
-        <option value="$PROJECT_DIR$/db/create-database.sql" />
         <option value="$PROJECT_DIR$/views/parts/replace.php" />
+        <option value="$PROJECT_DIR$/views/Profiles/index.php" />
+        <option value="$PROJECT_DIR$/db/create-database.sql" />
         <option value="$PROJECT_DIR$/db/insert-sample-data.sql" />
+        <option value="$PROJECT_DIR$/views/parts/create.php" />
+        <option value="$PROJECT_DIR$/content/styles.css" />
+        <option value="$PROJECT_DIR$/views/parts/index.php" />
+        <option value="$PROJECT_DIR$/views/parts/edit.php" />
+        <option value="$PROJECT_DIR$/controllers/PartsController.php" />
+        <option value="$PROJECT_DIR$/models/PartsModel.php" />
       </list>
     </option>
   </component>
@@ -307,24 +301,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -354,25 +330,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_layout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -418,17 +376,17 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\blog\views\myposts" />
-      <recent name="C:\xampp\htdocs\blog\views\users" />
-      <recent name="C:\xampp\htdocs\blog\views\home" />
-      <recent name="C:\xampp\htdocs\blog\models" />
-      <recent name="C:\xampp\htdocs\blog\controllers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\blog\c" />
       <recent name="C:\xampp\htdocs\blog\views\checks" />
       <recent name="C:\xampp\htdocs\blog\views\Profiles" />
+      <recent name="C:\xampp\htdocs\blog\models" />
+      <recent name="C:\xampp\htdocs\blog\controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\blog\views\myposts" />
+      <recent name="C:\xampp\htdocs\blog\views\users" />
+      <recent name="C:\xampp\htdocs\blog\views\home" />
       <recent name="C:\xampp\htdocs\blog\models" />
       <recent name="C:\xampp\htdocs\blog\controllers" />
     </key>
@@ -531,22 +489,22 @@
       <workItem from="1472508272215" duration="2297000" />
       <workItem from="1472511629879" duration="24976000" />
       <workItem from="1472592503026" duration="6869000" />
-      <workItem from="1472600881133" duration="9117000" />
+      <workItem from="1472600881133" duration="13106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363636000" />
+    <option name="totallyTimeSpent" value="367625000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34019503" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35211268" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15671642" sideWeight="0.82773566" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.042643923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124200426" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -597,18 +555,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/views/parts/index.php</url>
+          <line>1</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/_layout/show-notify-messages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/_layout/fill-posted-fields.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -637,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/PostsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/parts/change.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.026/index.php" />
     <entry file="file://$PROJECT_DIR$/content/scripts/ui.js" />
@@ -668,29 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/b6f8ec9a/fccf92e6-3dce-4687-b2bb-f4a661da5ea6/blog.parts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/parts/status.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -717,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/ProfilesModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/posts/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -731,48 +656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/Profiles/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/Profiles/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/home/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="372" column="1" selection-start-line="372" selection-start-column="1" selection-end-line="372" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/parts/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="18" selection-start-line="20" selection-start-column="14" selection-end-line="25" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/parts/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,45 +708,6 @@
         <state relative-caret-position="155">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/HomeModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/PartsModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <marker date="1472511930367" expanded="true" signature="1738:1875" ph="INSERT INTO posts... " />
-            <marker date="1472511930367" expanded="true" signature="2342:2455" ph="UPDATE parts... " />
-            <marker date="1472511930367" expanded="true" signature="2342:2495" ph="UPDATE parts... " />
-            <marker date="1472511930367" expanded="true" signature="2896:2913" ph="UPDATE parts... " />
-            <marker date="1472511930367" expanded="true" signature="2896:2928" ph="UPDATE parts... " />
-            <marker date="1472511930367" expanded="true" signature="2896:2971" ph="UPDATE parts... " />
-            <marker date="1472511930367" expanded="true" signature="3246:3276" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/PartsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="n#onInit#0;n#PartsController#0;n#!!top" expanded="false" />
-            <element signature="n#index#0;n#PartsController#0;n#!!top" expanded="false" />
-            <element signature="n#create#0;n#PartsController#0;n#!!top" expanded="false" />
-            <element signature="n#replace#0;n#PartsController#0;n#!!top" expanded="false" />
-            <element signature="n#edit#0;n#PartsController#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#PartsController#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -919,14 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/parts/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="129" column="23" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/parts/replace.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -959,19 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/UsersModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <marker date="1471766351904" expanded="true" signature="489:560" ph="INSERT INTO users... " />
-            <marker date="1471766351904" expanded="true" signature="979:1033" ph="SELECT id, p... users" />
-            <marker date="1471766351904" expanded="true" signature="1471:1563" ph="UPDATE users... " />
-            <marker date="1471766351904" expanded="true" signature="1852:1883" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/PostsModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -997,19 +824,170 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/HomeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/UsersModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <marker date="1471766351904" expanded="true" signature="489:560" ph="INSERT INTO users... " />
+            <marker date="1471766351904" expanded="true" signature="979:1033" ph="SELECT id, p... users" />
+            <marker date="1471766351904" expanded="true" signature="1471:1563" ph="UPDATE users... " />
+            <marker date="1471766351904" expanded="true" signature="1852:1883" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/ProfilesModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <marker date="1471871635201" expanded="true" signature="372:402" ph="DELETE FROM " />
+            <marker date="1471871635201" expanded="true" signature="627:659" ph="SELECT * FRO... users" />
+            <marker date="1471871635201" expanded="true" signature="967:1024" ph="UPDATE users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Profiles/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Profiles/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/Profiles/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/create-database.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="25" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="271">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b6f8ec9a/fccf92e6-3dce-4687-b2bb-f4a661da5ea6/blog.parts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/insert-sample-data.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="498">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="554" column="19" selection-start-line="554" selection-start-column="19" selection-end-line="554" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/parts/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/PostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+          <folding>
+            <element signature="n#onInit#0;n#PostsController#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#PostsController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/parts/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/PartsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+          <folding>
+            <element signature="n#onInit#0;n#PartsController#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#PartsController#0;n#!!top" expanded="false" />
+            <element signature="n#create#0;n#PartsController#0;n#!!top" expanded="false" />
+            <element signature="n#replace#0;n#PartsController#0;n#!!top" expanded="false" />
+            <element signature="n#delete#0;n#PartsController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/parts/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/PartsModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1472661928760" expanded="true" signature="1787:1939" ph="INSERT INTO posts... " />
+            <marker date="1472661928760" expanded="true" signature="2436:2550" ph="UPDATE parts... " />
+            <marker date="1472661928760" expanded="true" signature="2436:2606" ph="UPDATE parts... " />
+            <marker date="1472661928760" expanded="true" signature="3021:3038" ph="UPDATE parts... " />
+            <marker date="1472661928760" expanded="true" signature="3021:3053" ph="UPDATE parts... " />
+            <marker date="1472661928760" expanded="true" signature="3021:3096" ph="UPDATE parts... " />
+            <marker date="1472661928760" expanded="true" signature="3371:3401" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
