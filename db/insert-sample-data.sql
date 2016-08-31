@@ -1,6 +1,9 @@
 USE blog;
 
 INSERT INTO users (username, password_hash, full_name) VALUES ('admin', '$2y$10$QlKthcuYhn.XP/gy5A/OZeQdOzIznqxqOf/qBrSAnGpoW4labIL0W', 'Administrator');
+
+INSERT INTO users (username, password_hash, full_name) VALUES ('stlevkov', '$2y$10$aqsgT.qlXQDcjzCW1u7kXu0N67EXHkxvzA2cXUS8Oz53StuJTzvzm', 'Stoycho Levkov');
+
 INSERT INTO users (username, password_hash, full_name) VALUES ('nakov', '$2y$10$XViubT.zSoBtskZmKl6kdOX8Yq7T7tLrcrLn/5dkAqbgjVACeFUGe', 'Svetlin Nakov');
 INSERT INTO users (username, password_hash, full_name) VALUES ('maria', '$2y$10$gzlpX/N5apTruTBajMJwM.0h9OgLVgQxk6N0YhGy2iY4BI73SYkKO', 'Maria Ivanova');
 INSERT INTO users (username, password_hash, full_name) VALUES ('ani', '$2y$10$9T9bN6ctJ4R.fdnLvzsdQOj0sk4mWqwohILMx60/jP1YEXtJguhD2', 'Ani Kirova');
@@ -59,10 +62,29 @@ INSERT INTO posts (title, content, date, user_id) VALUES ('Rogue Wave Updates Ze
 
 <p>“I’m extremely proud of the work we’ve done with Expressive,” said Matthew Weier O’Phinney, principal engineer and Zend Framework project lead at Rogue Wave. “Expressive signals the future of PHP applications, composed of layered, single-purpose PSR-7 middleware.”</p>
 ', '2015-11-22 11:57:40', 5);
-INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Motorno Maslo', 'EKO DIESEL ENGINE OIL from Gencho', '2015-11-22 11:57:40', 183000, 80000, 'CAR-PRO-SOFIA', 'yes', 5);
-INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Angrenajen remak', 'Angrenaje pro 2016 ot Pro-service-Sofia', '2015-11-22 11:57:40', 180000, 130000, 'Mobile auto Zapaden park Sofia','no', 2);
-INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Nakladki', 'PRO USER STOP WHEELS', '2015-11-22 11:57:40',184000, 40000, 'Peugeot official service Liulin Sofia','yes', 5);
 
 
 
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Масло Двигател', 'EKO DIESEL ENGINE OIL from Gencho', '2015-11-22 11:57:40', 190000, 80000, 'CAR-PRO-SOFIA', 'Yes', 3);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Ангренажен Ремък', 'Angrenaje pro 2016 ot Pro-service-Sofia', '2015-11-22 11:57:40', 190000, 130000, 'Mobile auto Zapaden park Sofia','No', 3);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Накладки', 'PRO USER STOP WHEELS', '2015-11-22 11:57:40',190000, 40000, 'Peugeot official service Liulin Sofia','Yes', 3);
 
+
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Масло Двигател', 'EKO DIESEL ENGINE OIL from Gencho', '2015-11-22 11:57:40', 150000, 80000, 'CAR-PRO-SOFIA', 'Yes', 4);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Ангренажен Ремък', 'Angrenaje pro 2016 ot Pro-service-Sofia', '2015-11-22 11:57:40', 150000, 130000, 'Mobile auto Zapaden park Sofia','No', 4);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Накладки', 'PRO USER STOP WHEELS', '2015-11-22 11:57:40',150000, 40000, 'Peugeot official service Liulin Sofia','Yes', 4);
+
+
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Масло Двигател', 'EKO DIESEL ENGINE OIL from Gencho', '2015-11-22 11:57:40', 180000, 80000, 'CAR-PRO-SOFIA', 'Yes', 5);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Ангренажен Ремък', 'Angrenaje pro 2016 ot Pro-service-Sofia', '2015-11-22 11:57:40', 180000, 130000, 'Mobile auto Zapaden park Sofia','No', 5);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Накладки', 'PRO USER STOP WHEELS', '2015-11-22 11:57:40',180000, 40000, 'Peugeot official service Liulin Sofia','Yes', 5);
+
+
+
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Накладки', 'PRO USER STOP WHEELS', '2016-05-22 11:57:40',183000, 40000, 'Peugeot official service Liulin Sofia','No', 2);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Ангренажен Ремък + Ролки', 'Angrena-Ts pro 2016 ot Pro-service-Sofia', '2016-11-22 11:57:40', 183000, 50000, 'Mobile auto Zapaden park Sofia','No', 2);
+INSERT INTO parts(part_name,description,date,car_kilometers,part_life,service_name, archive, user_id) VALUES ('Въздушен филтър','Кей Енд Макс (K&Max)', '2016-05-31 10:10:10', 183000, 10000, 'BMW Service BG TUNE - София', 'No', 2 );
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Масло Двигател', 'EKO DIESEL ENGINE OIL from Gencho', '2016-05-22 11:57:40', 183000, 10000, 'CAR-PRO-SOFIA', 'No', 2);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Филтър на Купето', 'Filters and Air Dynamics - PLOVDIV ', '2016-05-22 11:57:40', 183000, 15000, 'CAR-PRO-SOFIA', 'No', 2);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('Горивен филтър', 'Filters and Air Dynamics - PLOVDIV ', '2016-05-22 11:57:40', 183000, 15000, 'BMW Service BG TUNE - София', 'No', 2);
+INSERT INTO parts (part_name, description, date, car_kilometers, part_life, service_name, archive, user_id) VALUES ('ФРЕОН на климатика', '3 liters ', '2016-07-22 11:57:40', 184000, 30000, 'Люлин София - 6+ , сервиз Шест6+ ', 'No', 2);

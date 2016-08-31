@@ -32,7 +32,6 @@ class MyPostsModel extends HomeModel
         $statement->bind_param("i", $id);
         $statement->execute();
         return $statement->affected_rows == 1;
-
     }
 
     public function edit(string $id, string $title, string $content,
@@ -46,8 +45,4 @@ class MyPostsModel extends HomeModel
         $statement->execute();
         return $statement->affected_rows >= 0;
     }
-
-
-
-
 }

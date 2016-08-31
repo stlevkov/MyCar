@@ -12,7 +12,6 @@ class PartsController extends BaseController
         $this->parts = $this->model->getAll();
     }
 
-
     function create()
     {
         if($this->isPost) {
