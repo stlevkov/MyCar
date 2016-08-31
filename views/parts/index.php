@@ -124,7 +124,7 @@
                <div class="progress-bar-header">Part Name: <i><?=htmlspecialchars($part['part_name']) ?></i></div>
                <div class="progress-bar-header">Installed on: <i><?=htmlspecialchars($part['date']) ?> </i></div>
                <div class="progress-bar-header">by <i><?=htmlspecialchars($part['service_name']) ?></i></div><br>
-                <div id="progress-bar-part-price">Spend <?=htmlspecialchars($part['part_price']) ?> лв.</div>
+                <div id="progress-bar-part-price">Spent <?=htmlspecialchars($part['part_price']) ?> лв.</div>
                <br>
              <?php
                if  ($left_kilometers > $part_life) {
