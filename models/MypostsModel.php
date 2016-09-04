@@ -4,7 +4,6 @@ class MyPostsModel extends HomeModel
 {
     function getAll() : array
     {
-
         $current_user = htmlspecialchars($_SESSION['user_id']);
         $statement = self::$db->query(
             "SELECT posts.id, title, content, date, full_name, user_id " .
@@ -35,7 +34,7 @@ class MyPostsModel extends HomeModel
     }
 
     public function edit(string $id, string $title, string $content,
-                         string $date ) : bool
+                         string $date) : bool
     {
         $statement = self::$db->prepare(
             "UPDATE posts SET title = ?, " .

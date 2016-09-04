@@ -12,7 +12,7 @@
             <textarea id="post-description" name="post_content"></textarea>
             <br>
             <br>
-            <div><input type="submit" value="CREATE"/></div>
+            <div><input type="submit" value="Create"/></div>
             <div class="cancel-button">
                 <a href="<?=APP_ROOT?>/myposts">CANCEL</a>
             </div>

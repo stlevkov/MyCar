@@ -21,10 +21,15 @@
        htmlspecialchars($this->post['user_id'])?>" />
          <br>
          <br>
-           <div><input type="submit" value="Edit">
-               <div class="cancel-button">
-               <a href="<?=APP_ROOT?>/posts">Cancel</a></div>
-         </div>
+         <?php
+         $current_user = htmlspecialchars($_SESSION['username']);
+         if ($current_user == 'admin' ) {
+             echo " <div><input type=\"submit\" value=\"Edit\"></div>";
+         } else {
+             $this->redirect('posts');
+         }?>
+         <div class="cancel-button">
+             <a href="<?=APP_ROOT?>/myposts">Cancel</a></div>
          <br>
          <br>
 </form>

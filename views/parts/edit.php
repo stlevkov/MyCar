@@ -38,11 +38,18 @@
         htmlspecialchars($this->part['date'])?>" />
         <br>
         <br>
-        <div><input type="submit" value="Edit">
-            <br>
-            <div class="cancel-button">
+        <?php
+        if ($this->part['user_id'] == htmlspecialchars($_SESSION['user_id'])) {
+            echo "<div><input type=\"submit\" value=\"Edit\"></div>";
+        } else if (htmlspecialchars($_SESSION['username']) == 'admin') {
+            echo "<div><input type=\"submit\" value=\"Edit\"></div>";
+        } else {
+            $this->redirect('parts');
+        }?>
+        <div class="cancel-button">
             <a href="<?=APP_ROOT?>/parts">Cancel</a></div>
-            </div>
+        <br>
+        <br>
     </form>
 
 

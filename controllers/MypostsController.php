@@ -45,7 +45,7 @@ class MyPostsController extends BaseController
                 } else {
                     $this->addErrorMessage("Error: cannot delete post.");
                 }
-                $this->redirect('posts');
+                $this->redirect('myposts');
             }
             else {
                 // HTTP GET
@@ -53,7 +53,7 @@ class MyPostsController extends BaseController
                 $post = $this->model->getPostById($id);
                 if(! $post) {
                     $this->addErrorMessage("Error: post does not exist");
-                    $this->redirect("posts");
+                    $this->redirect("myposts");
                 }
                 $this->post = $post;
             }
@@ -61,6 +61,7 @@ class MyPostsController extends BaseController
 
     function edit(int $id)
     {
+
             if ($this->isPost) {
 
                 // HTTP POST
@@ -91,7 +92,7 @@ class MyPostsController extends BaseController
             }
 
             // HTTP GET
-            // Show "confirm delete" form
+            // SHOW EDIT FORM
             $post = $this->model->getPostById($id);
             if (!$post) {
                 $this->addErrorMessage("Error: post does not exist");

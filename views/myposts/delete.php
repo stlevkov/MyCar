@@ -16,10 +16,14 @@
               htmlspecialchars($this->post['content'])?></textarea>
           <br>
           <br>
-          <div><input type="submit" value="Delete"/>
-          <div class="cancel-button">
-            <a href="<?=APP_ROOT?>/myposts">Cancel</a></div>
-    </div>
+            <?php
+            if ($this->post['user_id'] == htmlspecialchars($_SESSION['user_id'])) {
+                echo " <div><input type=\"submit\" value=\"Delete\"></div>";
+            } else {
+                $this->redirect('myposts');
+            }?>
+            <div class="cancel-button">
+                <a href="<?=APP_ROOT?>/myposts">Cancel</a></div>
     <br>
     <br>
 </form>

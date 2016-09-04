@@ -17,12 +17,16 @@
         htmlspecialchars($this->part['description'])?>"/>
         <br>
         <br>
-        <div><input type="submit" value="Delete"/>
-            <br>
-            <br>
-            <div class="cancel-button">
-                <a href="<?=APP_ROOT?>/parts">Cancel</a></div>
-        </div>
+        <?php
+        if ($this->part['user_id'] == htmlspecialchars($_SESSION['user_id'])) {
+            echo "<div><input type=\"submit\" value=\"Delete\"></div>";
+        } else if (htmlspecialchars($_SESSION['username']) == 'admin') {
+            echo "<div><input type=\"submit\" value=\"Delete\"></div>";
+        } else {
+            $this->redirect('parts');
+        }?>
+        <div class="cancel-button">
+            <a href="<?=APP_ROOT?>/parts">Cancel</a></div>
         <br>
     </form>
     </div>

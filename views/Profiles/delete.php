@@ -16,7 +16,7 @@
                value="<?=htmlspecialchars($this->user['password_hash'])?>" />
           <br>
           <br>
-          <div><input type="submit" value="delete"/>
+          <div><input type="submit" value="Delete"/>
               <br>
               <div class="cancel-button">
                  <a href="<?=APP_ROOT?>/profiles">Cancel</a></div>
