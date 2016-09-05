@@ -2,7 +2,7 @@
 <?php if ($username = htmlspecialchars($_SESSION['username']) == 'admin') { ?>
     <div class="body">
         <div class="page-header">
-            <?php $this->title = 'All Posts'; ?>
+            <?php $this->title = 'All News'; ?>
             <h1><?=htmlspecialchars($this->title)?></h1>
         </div>
 <main>
@@ -36,7 +36,7 @@
 <?php } else { ?>
     <div class="body">
         <div class="page-header">
-            <?php $this->title = 'View all posts'; ?>
+            <?php $this->title = 'App Updates'; ?>
             <h1><?=htmlspecialchars($this->title)?></h1>
         </div>
             <main>

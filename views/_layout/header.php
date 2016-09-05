@@ -35,9 +35,7 @@
                     </div>
                 </div>
             <?php } else if($this->isLoggedIn){ ?>
-                    <li><a href="<?=APP_ROOT?>/posts">Blog</a></li>
-                    <li><a href="<?=APP_ROOT?>/myposts">View My posts</a></li>
-                    <li><a href="<?=APP_ROOT?>/posts/create">New Post</a></li>
+                    <li><a href="<?=APP_ROOT?>/posts">More News</a></li>
                     <li><a href="<?=APP_ROOT?>/parts/index">Car Status</a></li>
                     <li><a href="<?=APP_ROOT?>/parts/create">Add new part</a></li>
 

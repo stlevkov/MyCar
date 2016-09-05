@@ -12,10 +12,16 @@
             <textarea id="post-description" name="post_content"></textarea>
             <br>
             <br>
-            <div><input type="submit" value="Create"/></div>
+            <?php
+            $current_user = htmlspecialchars($_SESSION['username']);
+            if ($current_user == 'admin' ) {
+                echo " <div><input type=\"submit\" value=\"Create\"></div>";
+            } else {
+                $this->redirect('home');
+            }?>
             <div class="cancel-button">
-                <a href="<?=APP_ROOT?>/myposts">CANCEL</a>
-            </div>
+                <a href="<?=APP_ROOT?>/myposts">Cancel</a></div>
+
         </form>
     </div>
 </div>
