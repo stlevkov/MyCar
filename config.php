@@ -1,7 +1,6 @@
 <?php
 
 define('APP_ROOT', '/mycar');
-
 define('DEFAULT_CONTROLLER', 'home');
 define('DEFAULT_ACTION', 'index');
 define('DB_HOST', 'localhost');

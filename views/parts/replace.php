@@ -8,7 +8,7 @@
         <div id="part-replacement-header">You are replacing part</div> <div id="part-replacement-name"><?=
         htmlspecialchars($this->part['part_name'])?></div>
         <div class="create-new-post-header">Part Life [km]</div>
-        <input type="text" name="part_life" value="<?=
+        <input type="number" name="part_life" value="<?=
         htmlspecialchars($this->part['part_life'])?>" />
         <div class="create-new-post-header">Replace part?</div>
         <select id="option-button" name="archive">

@@ -10,13 +10,13 @@
                <div class="create-new-post-header">Description</div>
                <input type="text" name="description"></input>
                <div class="create-new-post-header">Current Car Kilometers</div>
-               <input type="text" name="car_kilometers" />
+               <input type="number" name="car_kilometers" />
                <div class="create-new-post-header">Part Life [km]</div>
-               <input type="text" name="part_life" />
+               <input type="number" name="part_life" />
                <div class="create-new-post-header">Service Name</div>
                <input type="text" name="service_name" />
                <div class="create-new-post-header">Part Price [Лв]</div>
-               <input type="text" name="part_price" />
+               <input type="number" name="part_price" />
                <br>
                <br>
                <div class="create-new-post-header">Kind of Part</div>
@@ -34,7 +34,7 @@
                <br>
                <div><input type="submit" value="CREATE"/></div>
                <div class="cancel-button">
-                   <a href="<?=APP_ROOT?>/parts">CANCEL</a>
+                   <a href="<?=APP_ROOT?>/home">CANCEL</a>
                </div>
            </form>
     </div>

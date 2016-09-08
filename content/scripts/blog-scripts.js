@@ -1,3 +1,10 @@
+$(function () {
+    $('.handle').on('click', function () {
+        $('nav ul').toggleClass('showing');
+    });
+});
+
+
 $(function() {
     $("#messages li").click(function() {
         $(this).fadeOut();

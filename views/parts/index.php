@@ -1,4 +1,5 @@
 <div class="body">
+
     <?php if (htmlspecialchars($_SESSION['username']) == 'admin') { ?>
         <div class="page-header">
             <?php $this->title = 'Clients parts status'; ?>
@@ -52,14 +53,14 @@
         <div id='progress-bar-message'>Start by creating new part replacement</div><br>
         <table>
             <tr>
-                <th>Date</th>
+                <th>Date Start</th>
                 <th>Part Name</th>
                 <th>Description</th>
                 <th>Service Name</th>
-                <th>Car Kilometers [km]</th>
+                <th>Current Car Life [km]</th>
                 <th>Part Life [km]</th>
-                <th>Replaced?</th>
-                <th>Date Replaced</th>
+                <th>Old Part ?</th>
+                <th>Date End</th>
                 <th>Part Price [лв]</th>
                 <th>Actions</th>
             </tr>
@@ -120,11 +121,13 @@
                 break;
               }  ?>
               </form>
+
             <div class="progress-bar">
-               <div class="progress-bar-header">Part Name: <i><?=htmlspecialchars($part['part_name']) ?></i></div>
-               <div class="progress-bar-header">Installed on: <i><?=htmlspecialchars($part['date']) ?> </i></div>
-               <div class="progress-bar-header">by <i><?=htmlspecialchars($part['service_name']) ?></i></div><br>
-                <div id="progress-bar-part-price">Spent <?=htmlspecialchars($part['part_price']) ?> лв.</div>
+
+               <div class="progress-bar-header">Part Name:</div><div class="progress-bar-content"><?=htmlspecialchars($part['part_name']) ?></div>
+               <div class="progress-bar-header">Installed on:</div><div class="progress-bar-content"><i><?=htmlspecialchars($part['date']) ?> </i></div>
+               <div class="progress-bar-header">by: </div><div class="progress-bar-content"><i><?=htmlspecialchars($part['service_name']) ?></i></div><br>
+                <div id="progress-bar-part-price">Spent: <?=htmlspecialchars($part['part_price']) ?> лв.</div>
                <br>
              <?php
                if  ($left_kilometers > $part_life) {
@@ -134,6 +137,8 @@
                    echo "<div id='progress-bar-message'>Override part life by  " . abs($difference) . " km.<br></div>";
                } else {
                  $percent = round(($left_kilometers / $part_life) * 100, 1);
+                   echo "<div id='progress-bar-message-override'>Your parts are in good condition! Save travel!</div>";
+                   echo "<br>";
                    echo "<div id='progress-bar-message'>You passed " . "$left_kilometers" . " km" . "  from " . "$part_life" . " km. of Part Life " . "</div>";
                    echo "<div id='progress-bar-message'>Now you have " . "$difference" . " km more to travel.</div><br>";
                    if ($percent >= 95) {
@@ -156,8 +161,8 @@
                   </div>
                <?php } ?>
             </div>
-                <a id="change-button" href="<?=APP_ROOT?>/parts/replace/<?=
-                htmlspecialchars($part['id'])?>">Replace</a>
+                <div id="change-button"><a  href="<?=APP_ROOT?>/parts/replace/<?=
+                htmlspecialchars($part['id'])?>">Replace</a></div>
            </div>
             <br>
             <br>

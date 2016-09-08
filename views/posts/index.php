@@ -1,6 +1,6 @@
-<div class="body">
+
 <?php if ($username = htmlspecialchars($_SESSION['username']) == 'admin') { ?>
-    <div class="body">
+
         <div class="page-header">
             <?php $this->title = 'All News'; ?>
             <h1><?=htmlspecialchars($this->title)?></h1>
@@ -32,9 +32,7 @@
 <?php endforeach ?>
     </table>
 </main>
-
 <?php } else { ?>
-    <div class="body">
         <div class="page-header">
             <?php $this->title = 'App Updates'; ?>
             <h1><?=htmlspecialchars($this->title)?></h1>
@@ -61,8 +59,4 @@
             <br>
         <?php endforeach ?>
     </main>
-    </div>
 <?php } ?>
-</div>
-<div id="button-scroll-up" onclick="location.href='#scroll-up';" style="cursor:pointer;"></div>
-

@@ -29,8 +29,8 @@ CREATE INDEX fk_users_posts_idx ON posts (user_id);
 CREATE TABLE parts
 (
   id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  part_name VARCHAR(300) NOT NULL,
-  description TEXT NOT NULL,
+  part_name VARCHAR(30) NOT NULL,
+  description VARCHAR(40) NOT NULL,
   date DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
   car_kilometers int(11),
   part_life int(11),

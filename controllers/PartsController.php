@@ -46,7 +46,7 @@ class PartsController extends BaseController
             $date = $_POST['post_date'];
             $dateRegex = '/^\d{2,4}-\d{1,2}-\d{1,2}( \d{1,2}:\d{1,2}(:\d{1,2})?)?$/';
             if (!preg_match($dateRegex, $date)) {
-                $this->setValidationError("post_date", "Invalid date!");
+                $this->setValidationError("post_date", "Invalid date! Check format again!");
             }
             if ($this->formValid()){
                 $userId = $_SESSION['user_id'];
@@ -75,7 +75,7 @@ class PartsController extends BaseController
             $date_replaced = $_POST['post_date'];
             $dateRegex = '/^\d{2,4}-\d{1,2}-\d{1,2}( \d{1,2}:\d{1,2}(:\d{1,2})?)?$/';
             if (!preg_match($dateRegex, $date_replaced)) {
-                $this->setValidationError("post_date", "Invalid date!");
+                $this->setValidationError("post_date", "Invalid date! Check format again!");
             }
 
             if ($this->formValid()) {
@@ -134,7 +134,7 @@ class PartsController extends BaseController
             $date = $_POST['post_date'];
             $dateRegex = '/^\d{2,4}-\d{1,2}-\d{1,2}( \d{1,2}:\d{1,2}(:\d{1,2})?)?$/';
             if (!preg_match($dateRegex, $date)) {
-                $this->setValidationError("post_date", "Invalid date!");
+                $this->setValidationError("post_date", "Invalid date! Check format again!");
             }
             if ($this->formValid()) {
                 if ($this->model->edit($part_name, $description, $car_kilometers, $part_life, $service_name, $archive, $part_price, $date, $id )) {
