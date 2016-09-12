@@ -15,6 +15,9 @@ User can see his articles prices and garage description also dates in car status
 This app is made by needs of me , because iv searching for this kind of program for a lot of time.
 Car reminder have responsive nice looking design. 
 
+The program have Admin menu and Admin rights.
+
+
 Technologies: 
 
 -PHP 7.0.6
