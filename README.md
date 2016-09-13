@@ -1,7 +1,7 @@
 # MyCar
-Blog system and maintenance app
+PHP, MySQL, XAMPP, Jquery, JS, MVC - CAR PARTS Replacement Software 
 
-
+<hr>
 The  MyCar Reminder program use users data to colect , compare and calculate the values of different part used on maintenance replacing process . 
 Also the program colect Prices , descriptions , dates and Pictures.
 
@@ -16,7 +16,7 @@ This app is made by needs of me , because iv searching for this kind of program 
 Car reminder have responsive nice looking design. 
 
 The program have Admin menu and Admin rights.
-
+<hr>
 
 Technologies: 
 
